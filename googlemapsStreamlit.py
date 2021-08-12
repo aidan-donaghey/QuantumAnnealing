@@ -2,7 +2,6 @@ from re import template
 import pandas as pd
 import os
 import gmaps
-import APIKey
 import streamlit as st
 import pydeck as pdk
 import numpy as np
@@ -10,7 +9,7 @@ import googlemaps
 import SessionState
 import Quantum_Annealing as qa
 import plotly.io as pio
-
+import os
 
 from urllib.error import URLError
 
@@ -18,8 +17,9 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 
-gmaps = googlemaps.Client(key=APIKey.googleMapsKey)
-
+# gmaps = googlemaps.Client(key=APIKey.googleMapsKey)
+# st.write("GoogleMapsKey:", st.secrets["GMAPS_API"])
+gmaps = googlemaps.Client(key = os.getenv('GMAPS_API'))
 
 
 
