@@ -103,6 +103,7 @@ dependencies:
   - wcwidth=0.2.5=py_0
   - wheel=0.36.2=pyhd3eb1b0_0
   - widgetsnbextension=3.5.1=py39h6e9494a_4
+  - xz=5.2.5=h1de35cc_0
   - zeromq=4.3.3=hb1e8313_3
   - zipp=3.5.0=pyhd8ed1ab_0
   - zlib=1.2.11=h1de35cc_3
@@ -172,3 +173,4 @@ dependencies:
     - webencodings==0.5.1
     - werkzeug==2.0.1
     - wrapt==1.12.1
+prefix: /Users/aidandonaghey/miniconda3/envs/QTSP
