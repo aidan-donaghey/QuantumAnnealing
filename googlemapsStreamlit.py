@@ -47,7 +47,7 @@ def quantumCityOrder(cities, sol=None):
               
 
 form = st.form(key='my_form')
-text = form.text_input(label='Enter some text')
+text = form.text_input(label='Enter a Location')
 submit_button = form.form_submit_button(label='Submit')
 
 
