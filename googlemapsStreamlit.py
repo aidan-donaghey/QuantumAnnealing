@@ -75,7 +75,8 @@ st.markdown("### Quantum Annealing")
 st.markdown("Press the 'Run' button to run the optimisation on DWAVE's quantum annealing hardware and plot a map that will give you the shortest loop to travel to all of the locations and return home in the shortest distance possible. It may take a some time to ping their server and submit the job.")
 QAbutton = st.button("Run the QA")
 if QAbutton:
-  bestsample = qa.RunQA(qa.setcities(citiesdata))
+  dimensionality = 24000
+  bestsample = qa.RunQA(qa.setcities(citiesdata),dimensionality)
   sortedOrder = quantumCityOrder(qa.setcities(citiesdata),bestsample)
   st.session_state.ordredcities = citiesdata.reindex(sortedOrder)
   df2 = st.session_state.ordredcities.iloc[0]

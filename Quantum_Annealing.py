@@ -81,7 +81,7 @@ def getcities():
 #     ("h", (3, 1))
 # ]
 
-def RunQA(cities):
+def RunQA(cities,dimensionality):
     print(cities)
     n_city = len(cities)
     print(n_city)
